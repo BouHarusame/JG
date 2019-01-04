@@ -1,0 +1,59 @@
+:root {
+  --menu-background-color: #1d89b8;
+  --menu-opened-background-color: #46607b;
+  --menu-hover-background-color: #4a6c90;
+  --menu-color: #fff;
+  --menu-active-color: #409eff;
+}
+
+.theme-blue {
+  & .app-container {
+    & .sidebar-container {
+      & .el-submenu__title i, & .el-menu-item i {
+        color: #fff;
+      }
+      & .el-menu {
+        background-color: var(--menu-background-color);
+        
+        & .el-menu-item {
+          color: var(--menu-color);
+          &:hover, &:focus {
+            background-color: var(--menu-hover-background-color);
+          }
+        }
+        
+        & .el-submenu {
+          & .el-submenu__title,
+          & .el-menu-item {
+            color: var(--menu-color);
+
+            &.is-active {
+              color: var(--menu-active-color);
+            }
+
+            &:hover, &:focus {
+              background-color: var(--menu-hover-background-color);
+            }
+          }
+        }
+
+        & .el-submenu.is-opened .el-menu {
+          background-color: var(--menu-opened-background-color);
+
+          & .el-menu-item:focus {
+            background-color: var(--menu-opened-background-color)
+          }
+        }
+      }
+    }
+  }
+
+  & .el-menu.el-menu--popup.el-menu--popup-right-start .el-menu-item {
+    color: var(--menu-color);
+    background-color: var(--menu-opened-background-color);
+
+    &:hover {
+      background-color: var(--menu-hover-background-color);
+    }
+  }
+}

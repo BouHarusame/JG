@@ -1,0 +1,56 @@
+:root {
+  --menu-background-color: #304156;
+  --menu-opened-background-color: #1f2d3d;
+  --menu-hover-background-color: #001528;
+  --menu-color: #bfcbd9;
+  --menu-active-color: #409eff;
+}
+
+.theme-dark {
+  & .app-container {
+    & .sidebar-container {
+      & .el-menu {
+        background-color: var(--menu-background-color);
+        
+        & .el-menu-item {
+          color: var(--menu-color);
+          &:hover, &:focus {
+            background-color: var(--menu-hover-background-color);
+          }
+        }
+        
+        & .el-submenu {
+          & .el-submenu__title,
+          & .el-menu-item {
+            color: var(--menu-color);
+
+            &.is-active {
+              color: var(--menu-active-color);
+            }
+
+            &:hover, &:focus {
+              background-color: var(--menu-hover-background-color);
+            }
+          }
+        }
+
+        & .el-submenu.is-opened .el-menu {
+          background-color: var(--menu-opened-background-color);
+
+          & .el-menu-item:focus {
+            background-color: var(--menu-opened-background-color)
+          }
+        }
+      }
+    }
+  }
+
+  & .el-menu.el-menu--popup.el-menu--popup-right-start .el-menu-item {
+    color: var(--menu-color);
+    background-color: var(--menu-opened-background-color);
+
+    &:hover {
+      background-color: var(--menu-hover-background-color);
+    }
+  }
+}

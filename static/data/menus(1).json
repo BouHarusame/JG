@@ -1,0 +1,133 @@
+[
+  {
+    "id": "100000000",
+    "name": "system",
+    "title": "系统管理",
+    "parent": null,
+    "icon": "el-icon-setting",
+    "index": 10
+  },
+  {
+    "id": "100010001",
+    "name": "user",
+    "title": "用户管理",
+    "parent": "100000000",
+    "index": 0
+  },
+  {
+    "id": "100010002",
+    "name": "role",
+    "title": "角色管理",
+    "parent": "100000000",
+    "index": 1
+  },
+  {
+    "id": "100010003",
+    "name": "dict",
+    "title": "数据字典",
+    "parent": "100000000",
+    "index": 2
+  },
+  {
+    "id": "100010002",
+    "name": "type",
+    "title": "舰艇类型管理",
+    "parent": null,
+    "index": 0
+  },
+  {
+    "id": "100020002",
+    "name": "strength",
+    "title": "舰艇实力",
+    "parent": null,
+    "index": 1
+  },
+  {
+    "id": "100030002",
+    "name": "record",
+    "title": "舰艇履历",
+    "parent": null,
+    "index": 2
+  },
+  {
+    "id": "101000005",
+    "name": "buildstatus",
+    "title": "设计建造阶段",
+    "parent": "100030002",
+    "index": 0
+  },
+  {
+    "id": "102000005",
+    "name": "buildrecord",
+    "title": "设计建造记录",
+    "parent": "100030002",
+    "index": 1
+  },
+  {
+    "id": "103000005",
+    "name": "repairtype",
+    "title": "修理改装类型",
+    "parent": "100030002",
+    "index": 2
+  },
+  {
+    "id": "104000005",
+    "name": "repairrecord",
+    "title": "修理改装记录",
+    "parent": "100030002",
+    "index": 3
+  },
+  {
+    "id": "100040002",
+    "name": "property",
+    "title": "舰艇性能",
+    "parent": null,
+    "index": 3
+  },
+  {
+    "id": "101040002",
+    "name": "total",
+    "title": "总体性能",
+    "parent": "100040002",
+    "index": 0
+  },
+  {
+    "id": "102040002",
+    "name": "mainsystem",
+    "title": "主要系统",
+    "parent": "100040002",
+    "index": 1
+  }
+//  {
+//    "id": "100000001",
+//    "name": "basic",
+//    "title": "基础数据",
+//    "parent": null,
+//    "index": 1,
+//    "icon": "el-icon-star-on"
+//  },
+//  {
+//    "id": "100000003",
+//    "name": "project",
+//    "title": "项目管理（2期）",
+//    "parent": null,
+//    "index": 3,
+//    "icon": "el-icon-menu"
+//  },
+//  {
+//    "id": "100000004",
+//    "name": "files",
+//    "title": "文档",
+//    "parent": null,
+//    "index": 4,
+//    "icon": "el-icon-document"
+//  },
+//  {
+//    "id": "100000005",
+//    "name": "workflow",
+//    "title": "工作流",
+//    "parent": null,
+//    "index": 5,
+//    "icon": "el-icon-tickets"
+//  }
+]
