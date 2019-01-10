@@ -1287,6 +1287,131 @@ const membersTable = function() {
     }
   ]
 }
+const dutyTable = function () {
+  return [
+    {
+      id: '1',
+      roleId: '82568466',
+      memberId: '47282071',
+      name: '杨德军',
+      sex: '男',
+      age: '30',
+      title: '1',
+      position: '舰船设计师',
+      professional: '舰船设计',
+      department: '2018-08-07'
+    },
+    {
+      id: '2',
+      roleId: '58461338',
+      memberId: '75451265',
+      name: '王克军',
+      sex: '男',
+      age: '30',
+      title: '1',
+      position: '舰船设计师',
+      professional: '舰船设计',
+      department: '2018-08-07'
+    },
+    {
+      id: '3',
+      roleId: '96512345',
+      memberId: '85471256',
+      name: '陈峰和',
+      sex: '男',
+      age: '30',
+      title: '1',
+      position: '舰船铸造师',
+      professional: '舰船铸造',
+      department: '2018-08-07',
+      resume: {
+        study: [],
+        work: []
+      }
+    },
+    {
+      id: '4',
+      roleId: '65412379',
+      memberId: '25488963',
+      name: '高东方',
+      sex: '女',
+      age: '30',
+      title: '1',
+      position: '舰船铸造师',
+      professional: '舰船铸造',
+      department: '2018-08-07',
+      resume: {
+        study: [],
+        work: []
+      }
+    },
+    {
+      id: '5',
+      roleId: '98546123',
+      memberId: '74445621',
+      name: '金建华',
+      sex: '男',
+      age: '30',
+      title: '1',
+      position: '舰船设计师',
+      professional: '舰船设计',
+      department: '2018-08-07',
+      resume: {
+        study: [],
+        work: []
+      }
+    },
+    {
+      id: '6',
+      roleId: '58461338',
+      memberId: '65412541',
+      name: '王抵军',
+      sex: '男',
+      age: '30',
+      title: '2',
+      position: '舰船设计师',
+      professional: '舰船设计',
+      department: '2018-08-07',
+      resume: {
+        study: [],
+        work: []
+      }
+    },
+    {
+      id: '7',
+      roleId: '74545465',
+      memberId: '32562354',
+      name: '江建华',
+      sex: '男',
+      age: '30',
+      title: '2',
+      position: '舰船铸造师',
+      professional: '舰船铸造',
+      department: '2018-08-07',
+      resume: {
+        study: [],
+        work: []
+      }
+    },
+    {
+      id: '8',
+      roleId: '74125632',
+      memberId: '56854125',
+      name: '陈方',
+      sex: '女',
+      age: '30',
+      title: '1',
+      position: '舰船铸造师',
+      professional: '舰船铸造',
+      department: '2018-08-07',
+      resume: {
+        study: [],
+        work: []
+      }
+    }
+  ]
+}
+
 
 const pMembersTable = function() {
   return [
@@ -1433,6 +1558,7 @@ MockJs.mock('/repairRecord', repairData)
 MockJs.mock('/shipTable', shipTable)
 MockJs.mock('/projectTable', projectTable)
 MockJs.mock('/membersTable', membersTable)
+MockJs.mock('/dutyTable', dutyTable)
 MockJs.mock('/config', configData)
 MockJs.mock('/configDetails', configDetails)
 MockJs.mock('/appointedDetails', appointedDetails)

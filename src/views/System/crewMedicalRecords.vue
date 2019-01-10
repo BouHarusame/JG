@@ -118,7 +118,7 @@
           </el-table-column> -->
       </el-table>
     </el-card>
-    <el-dialog :visible.sync="addDialog" :title="title">
+    <el-dialog :visible.sync="addDialog" :title="title" style="width:800px;margin: 0 auto;">
       <el-form label-width="120px">
         <el-row>
           <el-col :span="8">
@@ -595,7 +595,7 @@ export default {
   width: 120px;
   height: 160px;
   border: 2px solid #ddd;
-  margin: 60px auto;
+  margin: 10px auto;
 }
 .build-record {
   & .form-list {

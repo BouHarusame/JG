@@ -48,6 +48,10 @@
         </el-form>
       </div>
     </div>
+    <div class="login-bottom">
+      <h4>海军装备研究院舰船所</h4>
+      <p><i></i><span>上海中船船舶设计技术国家工程研究中心有限公司</span></p>
+    </div>
   </div>
 </template>
 
@@ -85,12 +89,15 @@ export default {
   height 100%
   marign 0 auto
   display flex
-  background url('../../common/images/login-bg.jpg') no-repeat center
+  // background url('../../common/images/login-bg.jpg') no-repeat center
+  background linear-gradient(#4493dd, #0876bf)
   justify-content center
   align-items center
+  position relative
   .login-content
     width 1000px
     height 192px
+    margin-bottom 130px
     display flex
     justify-content space-between
     align-items center
@@ -143,4 +150,29 @@ export default {
     .line
       height 192px
       border-right 1px solid #eee0dd
+  .login-bottom
+    width 1000px
+    height 120px
+    text-align center
+    color #ffffff
+    position absolute
+    left 50%
+    bottom 0px
+    margin-left -500px
+    h4
+      font-size 22px
+      margin-bottom 10px
+      font-weight 400
+    p
+      i
+        display inline-block
+        width 26px
+        height 22px
+        vertical-align middle
+        background url('../../common/images/logodddd.png') no-repeat center
+        background-size 100% 100%
+        margin-right 3px
+      span
+        vertical-align middle
+        font-size 22px
 </style>

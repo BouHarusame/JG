@@ -1,10 +1,14 @@
 <template>
   <div class="app-header">
     <div class="app-bars app-header-item left-item" @click="handleClickBars">
-      <i class="fa fa-bars app-bars-icon" :class="{collapse: isSidebarCollapse}" aria-hidden="true"></i>
+      <i class="app-bars-icon" :class="{collapse: isSidebarCollapse}" aria-hidden="true"></i>
     </div>
     <div class="app-header-item left-item">
-      <h3 class="app-header-title">海军辅助舰船信息化管理系统</h3>
+      <h3 class="app-header-title">综合保障管理系统</h3>
+    </div>
+    <div class="rs_select_ship">
+    <div class="app-header-item rs_select_ship">用户: 系统管理员</div>
+    <div class="app-header-item"> 登录时间： {{ LocaleDate }} </div>
     </div>
     <!-- <div class="app-header-item left-item rs_select_ship">
       <span class="label">请选择：</span>
@@ -69,7 +73,8 @@ export default {
     return {
       titleList: [],
       locale: storage.getItem('locale') || 'zh',
-      theme: ''
+      theme: '',
+      LocaleDate: null
     }
   },
   computed: {
@@ -89,11 +94,18 @@ export default {
       this.$store.commit('SET_SHIP', ship)
     }
     this.fetchShipList()
+    this.fetchDate()
   },
   methods: {
     ...mapMutations({
       handleClickBars: types.TOGGLE_SIDEBAR
     }),
+    fetchDate() {
+      this.LocaleDate = new Date().toLocaleString()
+      // setInterval(() => {
+      //   this.LocaleDate = new Date().toLocaleString()
+      // }, 1000)
+    },
     setTheme(themeClassName) {
       if (document.body.className !== themeClassName)
         document.body.className = themeClassName
@@ -169,6 +181,12 @@ export default {
       font-size: 1.4rem;
       height: var(--header-height);
       line-height: var(--header-height);
+      background: url('../../common/images/img/llogo.png') no-repeat center;
+      width: 30px;
+      vertical-align: middle;
+      height: 30px;
+      display: inline-block;
+      background-size: 100% 100%;
     }
 
     & .app-bars-icon.collapse {
@@ -253,7 +271,9 @@ export default {
     }
   }
   & .rs_select_ship {
-    margin-left: 40px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: flex-end;
     & .label {
       font-weight: bold;
     }

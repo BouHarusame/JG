@@ -11,6 +11,7 @@ import 'vx-easyui/dist/themes/icon.css'
 import 'vx-easyui/dist/themes/vue.css'
 import EasyUI from 'vx-easyui'
 // import Gantt from 'vue-easy-gantt'
+import VueContextMenu from 'vue-contextmenu'
 
 /* mock 数据 */
 import './mock/mock'
@@ -32,6 +33,7 @@ Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 Vue.use(EasyUI)
+Vue.use(VueContextMenu)
 Vue.component(CollapseTransition.name, CollapseTransition)
 // Vue.use(Gantt)
 

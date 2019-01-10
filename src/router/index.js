@@ -168,6 +168,14 @@ const systemRoute = {
       meta: { id: 101050002, title: '人员基本信息' }
     },
     {
+      path: 'buildDuty',
+      name: 'buildDuty',
+      component: resolve => {
+        require(['@/views/System/buildDuty'], resolve)
+      },
+      meta: { id: 100010006, title: '职务配置' }
+    },
+    {
       path: 'prostatus',
       name: 'prostatus',
       component: resolve => {
